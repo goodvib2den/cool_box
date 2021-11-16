@@ -1,0 +1,72 @@
+@import "../../reset.css";
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap");
+
+:root {
+  --mainBlue: rgb(92, 142, 233);
+  --subBlue: rgb(100, 149, 237);
+}
+
+body {
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+#btn-m2 {
+  display: flex;
+  width: 100vw;
+  height: 50vh;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#btn-m2 > div {
+  text-align: center;
+}
+
+#btn-m2 > div > p {
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: 0.1rem;
+  color: #666;
+  border-bottom: 1px solid #666;
+  padding: 0 5px 5px 5px;
+}
+
+#btn-m2 .btn {
+  display: block;
+  padding: 10px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 1.25px;
+  transition: all 0.3s;
+}
+
+#btn-m2 .btn-default {
+  background-color: var(--mainBlue);
+  color: #eee;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+#btn-m2 .btn-default:hover {
+  background-color: var(--subBlue);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.12), 0 2px 5px rgba(0, 0, 0, 0.24);
+}
+
+#btn-m2 .btn-outline {
+  border: 1px solid var(--mainBlue);
+  color: var(--mainBlue);
+}
+
+#btn-m2 .btn-outline:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+#btn-m2 .btn-text {
+  color: var(--mainBlue);
+}
+
+#btn-m2 .btn-text:hover {
+  background-color: rgba(92, 142, 233, 0.15);
+}
